@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Acordeon_three</title>
+		<link rel="stylesheet" href="./sass/style.css" />
+	</head>
+	<body>
+		<header>header</header>
+
+		<!-- 
+			seccion_name: nos sirve para implementar margenes y espaciados 
+			con el fin de separar el contenedor del body
+		-->
+		<div class="section_acordeon">
+			<!-- 
+				container_name: es quien contiene todos los elementos por lo
+				general es a esta que damos width para manejar el responsive
+			-->
+			<section class="container_acordeon">
+				<h2 class="acordeon_title">Mi Acordeon</h2>
+
+				<!-- 
+					box_name: caja de el acordeon, por lo general es a este 
+					le definimos width para manejar el responsive ademas es el 
+					encargado de recibir una clase mediante javascript que 
+					se encarga de mostrar el elemento acordeon_body
+				-->
+				<div class="box_acordeon">
+					<!-- 
+						acordeon_header: contiene el indice del acordeon 
+					-->
+					<section class="acordeon_header">
+						<h3>First accordion item</h3>
+						<img src="./assets/svg/arrow.svg" alt="" />
+					</section>
+
+					<!-- 
+						acordeon_body: contiene el cuerpo del acordeon 
+						y es este elemento que ocultamos y/o mostramos 
+						cada vez que hacemos click en el box_acordeon
+					-->
+					<div class="acordeon_body">
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+							dolor fuga quis ipsa, adipisci aperiam. Necessitatibus possimus
+							aperiam excepturi odio nemo iste, quod quibusdam. Debitis
+							aspernatur nostrum eveniet ea quibusdam.
+						</p>
+
+						<a href="#">Leer Mas</a>
+					</div>
+				</div>
+
+				<!-- box dos -->
+				<div class="box_acordeon">
+					<section class="acordeon_header">
+						<h3>First accordion item</h3>
+						<img src="./assets/svg/arrow.svg" alt="" />
+					</section>
+
+					<div class="acordeon_body">
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+							aspernatur nostrum eveniet ea quibusdam.
+						</p>
+
+						<a href="#">Leer Mas</a>
+					</div>
+				</div>
+
+				<!-- box tres -->
+				<div class="box_acordeon">
+					<section class="acordeon_header">
+						<h3>First accordion item</h3>
+						<img src="./assets/svg/arrow.svg" alt="" />
+					</section>
+
+					<div class="acordeon_body">
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque.
+						</p>
+
+						<a href="#">Leer Mas</a>
+					</div>
+				</div>
+
+				<!-- box cuatro -->
+				<div class="box_acordeon">
+					<section class="acordeon_header">
+						<h3>First accordion item</h3>
+						<img src="./assets/svg/arrow.svg" alt="" />
+					</section>
+
+					<div class="acordeon_body">
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+							dolor fuga quis ipsa, adipisci aperiam. Necessitatibus possimus
+							aperiam excepturi odio nemo iste, quod quibusdam. Debitis
+							aspernatur nostrum eveniet ea quibusdam.
+						</p>
+
+						<a href="#">Leer Mas</a>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer>footer</footer>
+		<script defer src="./js/main.js"></script>
+	</body>
+</html>
