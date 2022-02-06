@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Acordeon active</title>
+		<link rel="stylesheet" href="./sass/style.css" />
+	</head>
+	<body>
+		<header>header</header>
+
+		<!--  
+    		section_name: contenedor de la seccion
+		-->	
+		<div class="section_name">
+			<!--  
+        		container_name: contenedor encargado
+        		del responsive
+    		-->
+			<div class="container_name">
+				<!--  
+            		content_flexbox: contenedor definido
+            		para implementar flebox
+        		-->
+				<div class="content_flexbox">
+					<!--  
+                		box_accordeon: contiene elementos exclusivos
+                		para esta caja
+            		-->
+					<div class="box_accordeon">
+						<!-- 
+							content_accordeon: contenedor de accordeon_header y
+							accordeon_body. Esta clase tambien es utilizada en 
+							javascript
+						-->
+						<div class="content_accordeon">
+							<!-- 
+								accordeon_header: contiene el indice del acordeon 
+							-->
+							<section class="accordeon_header">
+								<!--  
+									accordeon title
+								-->
+								<h3>First accordion item</h3>
+
+								<!--  
+									accordeon icon
+								-->
+								<svg 
+									xmlns="http://www.w3.org/2000/svg" 
+									viewBox="0 0 24 24"
+								>
+									<path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z">
+									</path>
+								</svg>
+							</section>
+
+							<!-- 
+								accordeon_body: contiene el cuerpo del acordeon 
+							-->
+							<div class="accordeon_body">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+									dolor fuga quis ipsa, adipisci aperiam. Necessitatibus possimus
+									aperiam excepturi odio nemo iste, quod quibusdam. Debitis
+									aspernatur nostrum eveniet ea quibusdam.
+								</p>
+
+								<a href="#">Leer Mas</a>
+							</div>
+						</div>
+
+						<!-- content two -->
+						<div class="content_accordeon">
+							<section class="accordeon_header">
+								<h3>First accordion item</h3>
+
+								<svg 
+									xmlns="http://www.w3.org/2000/svg" 
+									viewBox="0 0 24 24"
+								>
+									<path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z">
+									</path>
+								</svg>
+							</section>
+
+							<div class="accordeon_body">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+									aspernatur nostrum eveniet ea quibusdam.
+								</p>
+
+								<a href="#">Leer Mas</a>
+							</div>
+						</div>
+
+						<!-- content three -->
+						<div class="content_accordeon">
+							<section class="accordeon_header">
+								<h3>First accordion item</h3>
+								
+								<svg 
+									xmlns="http://www.w3.org/2000/svg" 
+									viewBox="0 0 24 24"
+								>
+									<path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z">
+									</path>
+								</svg>
+							</section>
+
+							<div class="accordeon_body">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque.
+								</p>
+
+								<a href="#">Leer Mas</a>
+							</div>
+						</div>
+
+						<!-- content four -->
+						<div class="content_accordeon">
+							<section class="accordeon_header">
+								<h3>First accordion item</h3>
+								
+								<svg 
+									xmlns="http://www.w3.org/2000/svg" 
+									viewBox="0 0 24 24"
+								>
+									<path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z">
+									</path>
+								</svg>
+							</section>
+
+							<div class="accordeon_body">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+									dolor fuga quis ipsa, adipisci aperiam. Necessitatibus possimus
+									aperiam excepturi odio nemo iste, quod quibusdam. Debitis
+									aspernatur nostrum eveniet ea quibusdam.
+								</p>
+
+								<a href="#">Leer Mas</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>footer</footer>
+
+		<script src="./js/main.js"></script>
+	</body>
+</html>

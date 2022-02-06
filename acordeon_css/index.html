@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./sass/style.css" />
+		<title>Acordeon css</title>
+	</head>
+	<body>
+		<header>Header</header>
+
+		<!--  
+    		section_name: contenedor de la seccion
+		-->	
+		<div class="section_name">
+			<!--  
+        		container_name: contenedor encargado
+        		del responsive
+    		-->
+			<div class="container_name">
+				<!--  
+            		content_flexbox: contenedor definido
+            		para implementar flebox
+        		-->
+        		<div class="content_flexbox">
+					<!--  
+                		box_accordeon: contiene elementos exclusivos
+                		para esta caja
+            		-->
+					<div class="box_accordeon">
+						<!-- 
+							content_accordeon: contenedor de accordeon_header y
+							accordeon_body. Le definimos un id el cual pasamos
+							a la tag-a por medio de su att href
+						-->
+						<div class="content_accordeon" id="accordeon_one">
+							<!-- 
+								acordeon_header: contiene el indice del acordeon 
+							-->
+							<div class="accordeon_header">
+								<!--  
+									tag-a: es definada para hacer uso de su att
+									href el cual nos permite identificar a que 
+									contenedor pertenece
+								-->
+								<a href="#accordeon_one">
+									<!--  
+										accordeon title
+									-->
+									<h3>¿Que es la navidad en resumen ?</h3>
+
+									<!--  
+										accordeon icon
+									-->
+									<svg 
+										xmlns="http://www.w3.org/2000/svg" 
+										viewBox="0 0 24 24"
+									>
+										<path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z">
+										</path>
+									</svg>
+								</a>
+							</div>
+
+							<!-- 
+								acordeon_body: contiene el cuerpo del acordeon 
+							-->
+							<div class="accordeon_body">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+									facilis illum quo consequuntur ducimus praesentium maxime labore
+									omnis voluptatum repellat.
+								</p>
+
+								<a href="#">Leer Mas</a>
+							</div>
+						</div>
+
+						<!-- content two -->
+						<div class="content_accordeon" id="accordeon_two">
+							<div class="accordeon_header">
+								<a href="#accordeon_two">
+									<h3>¿Que es la navidad en resumen ?</h3>
+
+									<svg 
+										xmlns="http://www.w3.org/2000/svg" 
+										viewBox="0 0 24 24"
+									>
+										<path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z">
+										</path>
+									</svg>
+								</a>
+							</div>
+
+							<div class="accordeon_body">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+									facilis illum quo consequuntur ducimus praesentium maxime labore
+									facilis illum quo consequuntur ducimus praesentium maxime labore
+									facilis illum quo consequuntur ducimus praesentium maxime labore
+									omnis voluptatum repellat.
+								</p>
+
+								<a href="#">Leer Mas</a>
+							</div>
+						</div>
+
+						<!-- content three -->
+						<div class="content_accordeon" id="accordeon_three">
+							<div class="accordeon_header">
+								<a href="#accordeon_three">
+									<h3>¿Que es la navidad en resumen ?</h3>
+									
+									<svg 
+										xmlns="http://www.w3.org/2000/svg" 
+										viewBox="0 0 24 24"
+									>
+										<path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z">
+										</path>
+									</svg>
+								</a>
+							</div>
+
+							<div class="accordeon_body">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+									omnis voluptatum repellat.
+								</p>
+
+								<a href="#">Leer Mas</a>
+							</div>
+						</div>
+
+						<!-- content four -->
+						<div class="content_accordeon" id="accordeon_four">
+							<div class="accordeon_header">
+								<a href="#accordeon_four">
+									<h3>¿Que es la navidad en resumen ?</h3>
+
+									<svg 
+										xmlns="http://www.w3.org/2000/svg" 
+										viewBox="0 0 24 24"
+									>
+										<path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z">
+										</path>
+									</svg>
+								</a>
+							</div>
+
+							<div class="accordeon_body">
+								<p>omnis voluptatum repellat.</p>
+
+								<a href="#">Leer Mas</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>footer</footer>
+	</body>
+</html>

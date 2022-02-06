@@ -1,0 +1,133 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header,
+footer {
+	text-align: center;
+	background-color: cadetblue;
+	width: 100%;
+	height: 80px;
+}
+
+/*
+    section_name: contenedor definido para implementar
+    margin o padding con el fin de separar las secciones
+    entre si
+*/
+.section_name {
+	padding: 150px 0;
+	
+	/*
+		container_name: contenedor definido para manejar
+		el responsive implementando width
+    */
+	.container_name {
+		margin: 0 auto;
+
+		/*
+            @query de 899px <=== : definimos un width
+            responsive en esta medida
+        */
+		@media (max-width: 899px) {
+			width: 90%;
+		}
+
+		/*
+            @query de 900px ===> : definimos un width
+            responsive en esta medida
+        */
+		@media (min-width: 900px) {
+			width: 50%;
+		}
+
+		/*
+            content_flexbox: contenedor definido para
+            implementar flebox si se requiere
+        */
+		.content_flexbox {
+			/*
+				box_acordeon: caja contenedora que definimos cuando no
+				queremos que las propiedades flexbox afecten a cada caja
+			*/
+			.box_accordeon {
+				/*
+					content_accordeon: contenedor de accordeon_header y de
+					accordeon_body
+				*/
+				.content_accordeon {
+					/*
+						clase añadida a content_accordeon con javascript 
+						que relaciona a tag-h3 agregandole color
+					*/
+					&.js_show_accordeon .accordeon_header h3 {
+						color: orangered;
+					}
+
+					/*
+						clase añadida a content_accordeon con javascript 
+						que relaciona a tag-svg agregandole color y 
+						rotacion al icono
+					*/
+					&.js_show_accordeon .accordeon_header svg {
+						fill: orangered;
+						transform: rotate(180deg);
+					}
+
+					/*
+						clase añadida a content_accordeon con javascript 
+						que relaciona a accordeon_body agregandole una
+						altura y haciendolo visible
+					*/
+					&.js_show_accordeon .accordeon_body {
+						height: auto;
+						overflow: visible;
+					}
+
+					/*
+						acordeon_header: contiene el indice del acordeon 
+					*/
+					.accordeon_header {
+						display: flex;
+						justify-content: space-between;
+						border-bottom: 1px solid #333;
+						padding: 12px;
+						cursor: pointer;
+
+						h3 {
+							color: #333;
+						}
+
+						svg {
+							fill: #333;
+							width: 24px;
+							height: 24px;
+							transition: transform 0.3s ease-in-out;
+						}
+					}
+
+					/*
+						acordeon_body: contiene el cuerpo del acordeon 
+					*/
+					.accordeon_body {
+						height: 0;
+						overflow: hidden;
+						transition: height 0.3s ease;
+
+						p {
+							padding: 12px;
+							color: #333;
+						}
+
+						a {
+							display: block;
+							padding: 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,123 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+footer {
+  text-align: center;
+  background-color: cadetblue;
+  color: #fff;
+  width: 100%;
+  height: 80px;
+}
+
+/*
+    section_name: contenedor definido para implementar
+    margin o padding con el fin de separar las secciones
+    entre si
+*/
+.section_name {
+  padding: 150px 0;
+  /*
+         container_name: contenedor definido para manejar
+         el responsive implementando width
+     */
+}
+.section_name .container_name {
+  margin: 0 auto;
+  /*
+            @query de 899px <=== : definimos un width
+            responsive en esta medida
+        */
+  /*
+            @query de 900px ===> : definimos un width
+            responsive en esta medida
+        */
+  /*
+            flexbox_name: contenedor definido para
+            implementar flebox si se requiere
+        */
+}
+@media (max-width: 899px) {
+  .section_name .container_name {
+    width: 90%;
+  }
+}
+@media (min-width: 900px) {
+  .section_name .container_name {
+    width: 50%;
+  }
+}
+.section_name .container_name .content_flexbox {
+  /*
+  	box_acordeon: caja contenedora que definimos cuando no
+  	queremos que las propiedades flexbox afecten a cada caja
+  */
+}
+.section_name .container_name .content_flexbox .box_accordeon {
+  /*
+  	content_acordeon: contenedor de accordeon_header y de
+  	accordeon_body
+  */
+}
+.section_name .container_name .content_flexbox .box_accordeon .content_accordeon {
+  /*
+  	clase añadida a content_accordeon con javascript 
+  	que relaciona a tag-svg agregandole una 
+  	rotacion al icono
+  */
+  /*
+  	clase añadida a content_accordeon con javascript 
+  	que relaciona a accordeon_body agregandole una
+  	altura y haciendolo visible
+  */
+  /*
+  	acordeon_header: implementamos flexbox y su propiedad 
+  	justify-content para separar la tag-h3 y la tag-svg entre si
+  */
+  /*
+  	acordeon_body: implementamos height: 0 y 
+  	overflow: hidden para ocultar este caja que se 
+  	muestra cuando content_acordeon tiene la clase 
+  	js_show_accordeon
+  */
+}
+.section_name .container_name .content_flexbox .box_accordeon .content_accordeon.js_show_accordeon svg {
+  transform: rotate(180deg);
+}
+.section_name .container_name .content_flexbox .box_accordeon .content_accordeon.js_show_accordeon .accordeon_body {
+  height: auto;
+  overflow: visible;
+}
+.section_name .container_name .content_flexbox .box_accordeon .content_accordeon .accordeon_header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+  padding: 12px;
+  cursor: pointer;
+}
+.section_name .container_name .content_flexbox .box_accordeon .content_accordeon .accordeon_header h3 {
+  color: #333;
+}
+.section_name .container_name .content_flexbox .box_accordeon .content_accordeon .accordeon_header svg {
+  fill: #333;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+.section_name .container_name .content_flexbox .box_accordeon .content_accordeon .accordeon_body {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.section_name .container_name .content_flexbox .box_accordeon .content_accordeon .accordeon_body p {
+  color: #333;
+  padding: 12px;
+}
+.section_name .container_name .content_flexbox .box_accordeon .content_accordeon .accordeon_body a {
+  display: block;
+  padding: 12px;
+}/*# sourceMappingURL=style.css.map */
